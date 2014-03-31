@@ -1,6 +1,7 @@
 import pygame
 import blocks 
 import labelclass 
+<<<<<<< HEAD
 
 def clear_screen(r,g,b):
 	button_rec = pygame.Rect(0,0 ,600 ,600 )
@@ -15,6 +16,11 @@ def clear_screen(r,g,b):
 
 
 
+=======
+def clear_screen():
+	
+	
+>>>>>>> 43dff2532c701c07701e0c5f95756d49642cd4ad
 if __name__=="__main__":
 	pygame.init()
 	main_screen=pygame.display.set_mode((600,600))
