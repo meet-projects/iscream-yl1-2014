@@ -1,3 +1,4 @@
+
 import pygame
 import blocks 
 import labelclass 
@@ -8,6 +9,7 @@ def clear_screen(r,g,b):
     button_sq = pygame.Surface([600, 600])
     button_sq.fill((r, g, b))
     main_screen.blit(button_sq, button_rec)
+
 
 if __name__=="__main__":
     pygame.init()
