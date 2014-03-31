@@ -1,10 +1,9 @@
 import pygame
 import blocks 
-import lableclass 
+import labelclass 
 def clear_screen():
 	
 	
-
 if __name__=="__main__":
 	pygame.init()
 	main_screen=pygame.display.set_mode((600,600))
