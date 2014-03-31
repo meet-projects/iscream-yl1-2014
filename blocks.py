@@ -1,4 +1,5 @@
 import pygame
+
 class button(object):
 	def __init__(self, size, location, color):
 		self.size = size
@@ -11,4 +12,5 @@ class button(object):
 		button_sq.fill(self.color)
 		main_screen.blit(button_sq, button_rec) 
 	
+
 
