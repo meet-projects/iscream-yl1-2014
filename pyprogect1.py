@@ -1,4 +1,8 @@
 import pygame
+<<<<<<< HEAD
+
+=======
+>>>>>>> 79b866fb7f4a3c0fb9ac013d3d205e91b9f4e7f9
 class Picture (object):
 	def __init__(self, x , y, size, image_to_set):
 		self.x = x
@@ -9,7 +13,16 @@ class Picture (object):
 		self.button_rec=pygame.Rect(x, y, size[0], size[1])
 		self.buttonimg = pygame.image.load(image_to_set)
 
+<<<<<<< HEAD
+		self.button_rec=pygame.Rect(x, y, size)
+		self.buttonimg = pygame.image.load(image_to_set)
+
+	def draw (self, main_screen):
+		main_screen.blit(self.buttonimg, self.button_rec)
+			
+=======
 		
 	def drawimage(self, main_screen):
 		main_screen.blit(self.buttonimg, self.button_rec)
 		
+>>>>>>> 79b866fb7f4a3c0fb9ac013d3d205e91b9f4e7f9
