@@ -1,3 +1,5 @@
+import pygame
+
 class Picture (object):
 	def __init__(self, x , y, size, image_to_set):
 		self.x = x
