@@ -9,6 +9,7 @@ def draw_screen(main_screen):
     picture1= picture.Picture(105,15,[250,270],"Link to finallogo.jpg")
     picture1.draw(main_screen)
 
+    global p1
     p1=blocks.button([60,40],[510,550], (232,148,172))   
     p1.create(main_screen)
     lp1=labelclass.Label([510,550],[60,40],"Order",25)
