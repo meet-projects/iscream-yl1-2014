@@ -30,6 +30,8 @@ if __name__=="__main__":
 	e4.create(main_screen)
 	le4 = labelclass.Label([300,550],[120,50],"Next", 30)
 	le4.createlabel(main_screen)
+	l4 = labelclass.Label([250,25],[150,75],"Flavors",50)
+	l4.createlabel(main_screen)
 
 	while True:
 		ev = pygame.event.poll()
