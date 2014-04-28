@@ -1,7 +1,7 @@
 
 import pygame
 import blocks 
-import labelclass 
+import labelclass
 
 
 def clear_screen(r,g,b):
@@ -32,6 +32,15 @@ if __name__=="__main__":
             if a1.button_rec.collidepoint(x, y):
                 clear_screen(175,238,238)
                 scoopnum = 1
+
+			if a1.button_rec.collidepoint(x, y):
+                clear_screen(170,238,238)
+                scoopnum = 4
+
+
+
+
+
             elif b1.button_rec.collidepoint(x, y):
                 clear_screen(175,238,238)
                 scoopnum = 2
@@ -39,11 +48,23 @@ if __name__=="__main__":
                 clear_screen(175,238,238)
                 scoopnum = 3
 
+
         if scoopnum == 1:
             a2=blocks.button([80,60],[100,200], (218,109,128))   
             a2.create(main_screen)
             b2=blocks.button([80,60],[250,200], (218,109,128))       
             b2.create(main_screen)
+
+
+if scoopnum == 4:
+            a2=blocks.button([80,60],[100,200], (218,109,128))   
+            a2.create(main_screen)
+            b2=blocks.button([80,60],[250,200], (218,109,128))       
+            b2.create(main_screen)
+
+
+
+
         elif scoopnum == 2:
             a2=blocks.button([80,60],[100,200], (218,109,128))   
             a2.create(main_screen)
@@ -56,7 +77,6 @@ if __name__=="__main__":
             b2.create(main_screen)
         #if ev.type == pygame.MOUSEBUTTONDOWN:
             #x, y == ev.pos
-
 
 
 
