@@ -16,6 +16,7 @@ def clear_screen(r,g,b):
 if __name__=="__main__":
     pygame.init()
     main_screen=pygame.display.set_mode((600,600))
+
     # main_screen.fill((255,182,193))
 
     # a1=blocks.button([80,60],[100,200], (232,148,172))   
@@ -27,6 +28,7 @@ if __name__=="__main__":
 
     welcomscreen.draw_screen(main_screen)
 
+
     
     scoopnum = 0
 
@@ -34,6 +36,7 @@ if __name__=="__main__":
         ev = pygame.event.poll()
         if ev.type == pygame.MOUSEBUTTONDOWN:
             x, y = ev.pos
+
 
             if welcomscreen.p1.button_rec.collidepoint(x,y):
                 clear_screen(255,255,255)
@@ -58,12 +61,12 @@ if __name__=="__main__":
         #         scoopnum = 3
 
 
+
         # if scoopnum == 1:
         #     a2=blocks.button([80,60],[100,200], (218,109,128))   
         #     a2.create(main_screen)
         #     b2=blocks.button([80,60],[250,200], (218,109,128))       
         #     b2.create(main_screen)
-
 
         # if scoopnum == 4:
         #     a2=blocks.button([80,60],[100,200], (218,109,128))   
@@ -84,6 +87,7 @@ if __name__=="__main__":
         #     a2.create(main_screen)
         #     b2=blocks.button([80,60],[250,200], (218,109,128))       
         #     b2.create(main_screen)
+
         #if ev.type == pygame.MOUSEBUTTONDOWN:
             #x, y == ev.pos
 
