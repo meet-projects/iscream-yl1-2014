@@ -16,6 +16,7 @@ if __name__=="__main__":
     main_screen=pygame.display.set_mode((600,600))
     main_screen.fill((255,182,193))
 
+
     a1=blocks.button([80,60],[100,200], (232,148,172))   
     a1.create(main_screen)
     b1=blocks.button([80,60],[250,200], (232,148,172))       
@@ -33,14 +34,6 @@ if __name__=="__main__":
                 clear_screen(175,238,238)
                 scoopnum = 1
 
-			if a1.button_rec.collidepoint(x, y):
-                clear_screen(170,238,238)
-                scoopnum = 4
-
-
-
-
-
             elif b1.button_rec.collidepoint(x, y):
                 clear_screen(175,238,238)
                 scoopnum = 2
@@ -54,16 +47,6 @@ if __name__=="__main__":
             a2.create(main_screen)
             b2=blocks.button([80,60],[250,200], (218,109,128))       
             b2.create(main_screen)
-
-
-if scoopnum == 4:
-            a2=blocks.button([80,60],[100,200], (218,109,128))   
-            a2.create(main_screen)
-            b2=blocks.button([80,60],[250,200], (218,109,128))       
-            b2.create(main_screen)
-
-
-
 
         elif scoopnum == 2:
             a2=blocks.button([80,60],[100,200], (218,109,128))   
