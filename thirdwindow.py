@@ -1,15 +1,10 @@
 import pygame
 import blocks
 import labelclass
-if __name__=="__main__":
-	pygame.init()
-	main_screen=pygame.display.set_mode((600,600))
-    	main_screen.fill((196,255,255))
 
-
-
-
-
+def draw3(main_screen):
+	main_screen.fill((196,255,255))
+	
 	a3 = blocks.button([100,100],[100,150],(58,255,255))
 	a3.create(main_screen)
 	la3 = labelclass.Label([100,250],[100,25],"Vanilla",20)
@@ -33,8 +28,14 @@ if __name__=="__main__":
 	l3 = labelclass.Label([250,25],[150,75],"Flavors",50)
 	l3.createlabel(main_screen)
 
+
+if __name__=="__main__":
+	pygame.init()
+	main_screen=pygame.display.set_mode((600,600))
+	
+	draw3(main_screen)
+
 	while True:
 		ev = pygame.event.poll()
-	
 
 		pygame.display.flip()
